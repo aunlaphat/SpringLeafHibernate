@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html xmlns:th="https://www.thymeleaf.org">
+
+
+<head>
+	
+	<meta charset="UTF-8">
+	<title>index</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
+
+</head>
+
+<body>
+
+<style>
+.content {
+  max-width: 300px;
+  margin: auto;
+}
+
+.right{
+  max-width: 150px;
+  margin: auto;
+
+}
+</style>
+
+<div class="content">
+	</br>
+	<h1> Booking Detail: </h1>
+</div>
+
+	<form action="booking" method="post">
+	
+<div class="content">
+    <label for="name">Name: </label> <br/>
+	<input type="text" name="name"/> <br/>
+
+	<label for="num">How many: </label> <br/>
+	<input type="number" name="num"/> <br/>
+
+	<label for="date">Date: </label> <br/>
+	<input type="date" name="date"/> <br/>
+
+	<label for="time">Time: </label> <br/>
+	<input type="time" name="time"/> <br/>
+	
+	  <label for="time">time</label>
+            <select class="custom-select d-block w-100" id="time" required>
+              <option value="">Choose...</option>
+              <option>8.00-10.00</option>
+              <option>10.00-12.00</option>
+            </select>
+
+</div>
+	
+<div class="right">
+	<br/>
+	<button type="submit">Submit</button>
+
+</div>
+	
+
+</form>
+
+
+</body>
+</html>

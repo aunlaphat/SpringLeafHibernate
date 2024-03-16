@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<title>welcome</title>
+</head>
+<body>
+
+<style>
+.content {
+  text-align: center;
+}
+
+.right{
+  max-width: 300px;
+  margin: auto;
+
+}
+</style>
+
+<div class="content">
+
+	</br>
+	<h1>You're Booking Success!</h1>
+	<h2>This is your information:</h2>
+	
+</div>
+
+<div class="right">
+
+    <h2 th:text="${name}">Name: </h2>
+	<h2 th:text="${num}">Num: </h2>
+	<h2 th:text="${date}">Date: </h2>
+	<h2 th:text="${time}">Time: </h2>
+
+
+</div>
+
+
+
+</body>
+</html>
